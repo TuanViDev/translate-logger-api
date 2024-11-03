@@ -14,7 +14,7 @@ const writeLog = (logData) => {
     fs.readFile(logFilePath, 'utf8', (err, data) => {
         let logs = [];
         if (!err && data) {
-            logs = JSON.parse(data); /
+            logs = JSON.parse(data);
         }
 
         const logId = logs.length;
